@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="MoRF avatars are created from short monocular videos and can be rendered in real-time (30+ FPS, 640x640px) on mobile devices">
+  <meta property="og:title" content="HIO-SDF: Hierarchical Incremental Online Signed Distance Fields"/>
+  <meta property="og:description" content="HIO-SDF: Hierarchical Incremental Online Signed Distance Fields"/>
+  <meta property="og:url" content="https://samsunglabs.github.io/HIO-SDF-project-page"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="HIO-SDF: Hierarchical Incremental Online Signed Distance Fields">
+  <meta name="twitter:description" content="MoRF avatars are created from short monocular videos and can be rendered in real-time (30+ FPS, 640x640px) on mobile devices">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>HIO-SDF: Hierarchical Incremental Online Signed Distance Fields</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><a style="color:black;">HIO-SDF</a>: <a style="color:black;">Hierarchical Incremental Online Signed Distance Fields</a> </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/vasileios.jpg" alt="">
+                </div>
+                <a href="https://scholar.google.gr/citations?user=6BgZqbIAAAAJ&hl=en" target="_blank">Vasileios<br>Vasilopoulos</a></span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/suveer.jpg" alt="">
+                </div>
+                <a href="https://scholar.google.com/citations?user=aNf-rHcAAAAJ&hl=en" target="_blank">Suveer<br>Garg</a></span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/jinwook.jpg" alt="">
+                </div>
+                <a href="https://scholar.google.com/citations?user=qLZYuUMAAAAJ&hl=en" target="_blank">Jinwook<br>Huh</a></span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/bhoram.jpg" alt="">
+                </div>
+                <a href="https://scholar.google.com/citations?user=u7zNCi4AAAAJ&hl=en" target="_blank">Bhoram<br>Lee</a></span>
+              <span class="author-block">
+                <div class="author-portrait">
+                  <img class="img-fluid mb-3" src="static/images/avatar/volkan.jpg" alt="">
+                </div>
+                <a href="https://scholar.google.com/citations?user=Q5KT-hEAAAAJ&hl=en" target="_blank">Volkan<br>Isler</a></span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Samsung AI Center - New York</span>
+                  </div>
+
+                  <!-- ArXiv Link -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2310.09463" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv page</span>
+                  </a>
+                  <span class="link-block">
+                    <a href="https://arxiv.org/pdf/2310.09463.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv pdf</span>
+                  </a>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/SamsungLabs/HIO-SDF" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+
+                  <br>
+
+                
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="container">
+        A good representation of a large, complex mobile robot workspace must be space-efficient yet capable of encoding relevant geometric details. When exploring unknown environments, it needs to be updatable incrementally in an online fashion. We introduce HIO-SDF, a new method that represents the environment as a Signed Distance Field (SDF).
+        <br>
+        <br>
+      </div>
+      <div class="container">
+        State of the art representations of SDFs are based on either neural networks or voxel grids. Neural networks are capable of representing the SDF continuously. However, they are hard to update incrementally as neural networks tend to forget previously observed parts of the environment unless an extensive sensor history is stored for training. Voxel-based representations do not have this problem but they are not space-efficient especially in large environments with fine details.
+        <br>
+        <br>
+      </div>
+      <div class="container">
+        HIO-SDF combines the advantages of these representations using a hierarchical approach which employs a coarse voxel grid that captures the observed parts of the environment together with high-resolution local information to train a neural network. HIO-SDF achieves a 46% lower mean global SDF error across all test scenes than a state of the art continuous representation, and a 30% lower error than a discrete representation at the same resolution as our coarse global SDF grid.
+        <br>
+        <br>
+      </div>
+      <div class="container">
+        <center>
+          <video poster="" id="video1" height="100%" autoplay controls muted loop>
+            <source src="static/videos/method.mp4" type="video/mp4">
+          </video>
+        </center>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title has-text-centered">Method and System Architecture</h2>
+
+      <div class="container">
+        Our method uses a mixture of approaches to extract data for the self-supervised training of the global SDF: a) a discrete model for coarse global SDF value look-up without replaying past data, and b) a sensor-based local SDF representation that captures more fine details around the collision boundaries.
+        <br>
+        <br>
+      </div>
+      <div class="container">
+        The deep neural network representing the global SDF is constructed using periodic activation functions (SIREN), in order to enforce better accuracy and satisfaction of SDF-related constraints. Compared to alternative methods, the use of SIREN allows us to achieve superior performance with a very simple definition of the loss function.
+        <br>
+        <br>
+      </div>
+      <div class="container">
+        Unlike prior work, our method offers more flexibility, as it works both with depth sensors and sparse point cloud inputs (e.g., from a 3D LiDAR sensor).
+        <br>
+        <br>
+      </div>
+      <img src="static/images/architecture.png" alt="Architecture"/>
+      <br>
+      <br>
+      <div class="container">
+        HIO-SDF is implemented in ROS and can be fully integrated within a robot system architecture that uses conventional sensors (a 3D LiDAR sensor or a depth camera) and a 3D localization algorithm.
+      </div>
+
+      <br>
+      <br>
+
+      <h2 class="title has-text-centered">Example of Online SDF Reconstruction</h2>
+      <div class="container">
+        We demonstrate the evolution of the scene mesh reconstruction and slices of the 3D SDF at different heights, as a depth sensor explores an environment from the <a href="https://aihabitat.org/datasets/replica_cad/">ReplicaCAD</a> dataset. The locations of local SDF samples are shown with black dots at each sensor pose.
+        <br>
+        <br>
+      </div>
+      <div class="container">
+        <center>
+          <video poster="" id="video1" height="100%" autoplay controls muted loop>
+            <source src="static/videos/evolution.mp4" type="video/mp4">
+          </video>
+        </center>
+      </div>
+
+      <br>
+      <br>
+
+      <h2 class="title has-text-centered">Results</h2>
+      
+      <div class="container">
+        <center>
+          <video poster="" id="video1" height="100%" autoplay controls muted loop>
+            <source src="static/videos/results.mp4" type="video/mp4">
+          </video>
+        </center>
+      </div>
+      
+      <!-- <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths"> -->
+          
+          
+        <!-- </div>
+      </div> -->
+      <!-- </div>
+      </div>
+      </section> -->
+      <!-- End image carousel -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <
+    </div>
+  </div>
+</section> -->
+
+
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{vasilopoulos_garg_huh_lee_isler_2023,
+  title={{HIO-SDF: Hierarchical Incremental Online Signed Distance Fields}},
+  author={Vasilopoulos, Vasileios and Garg, Suveer and Huh, Jinwook and Lee, Bhoram and Isler, Volkan},
+  booktitle={{arXiv pre-print: 2310.09463}},
+  year={2023}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc/3.0/88x31.png"/>
+            </a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0">Creative Commons Attribution-NonCommercial 4.0 International License</a> (CC-BY-NC).
+          </p>
+          <p>
+            This webpage is built with the template from <a
+                  href="https://github.com/nerfies/nerfies.github.io" target="_blank">NeRFies</a>. We sincerely thank <a href="https://keunhong.com/" target="_blank">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
